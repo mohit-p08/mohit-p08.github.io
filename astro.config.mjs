@@ -8,4 +8,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://mohit-p08.github.io",
+  base: "/",
 });
