@@ -1,0 +1,153 @@
+---
+import { siteConfig } from "../config";
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+---
+
+{
+  hasExperience && (
+    <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+              Experience
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="relative">
+              {siteConfig.experience.map((exp, index) => (
+                <div class="relative mb-12 last:mb-0">
+                  {/* Timeline dot at top of card */}
+                  <!--
+                    <div
+                      class="absolute left-1/2 -top-2 w-4 h-4 bg-white border-2 rounded-full -translate-x-1/2 z-20 transition-all duration-300"
+                      style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`}
+                    />
+                  -->
+
+                  {/* Connecting line below card */}
+                  {index < siteConfig.experience.length - 1 && (
+                    <div class="absolute left-1/2 bottom-0 w-0.5 h-12 bg-gray-300 -translate-x-1/2 translate-y-full z-10" />
+                  )}
+
+                  {/* Experience card */}
+                  <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+                    <div class="flex flex-wrap flex-1 sm:items-center sm:justify-between mb-4">
+                      <div class="flex flex-col w-auto">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+                          {exp.title}
+                        </h3>                        
+                        <p
+                          class="text-base sm:text-lg"
+                          style={`color: ${siteConfig.accentColor}`}
+                        >
+                          {exp.company}
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-end w-auto">
+                        <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">
+                          {exp.dateRange}
+                        </span>
+                        <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">
+                          {exp.location}
+                        </span>
+                      </div>
+                    </div>
+
+                    <ul class="space-y-2 mb-4">
+                      <h5 class="text-lg sm:text-lg font-bold text-gray-900 mt-1">Bryte</h5>
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Developed feature-rich interfaces using "} <b>ReactTS</b> {", integrating "} <b>AWS-Amplify</b> {", scalable "} <b>MQTT</b> {" architecture for communication with "} <b>IoT</b> {" devices & "} <b>Cognito</b> {" scaling over "} <b>10K+ users</b> {"."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Implemented a robust "} <b>logging</b> {" infrastructure, routing data to "} <b>AWS OpenSearch</b> {" via "} <b>Kinesis Firehose</b> {" and visualizing with "} <b>Opensearch Dashboard</b> {" for real-time insights, enabling comprehensive error monitoring."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Upgraded "} <b>AWS Aurora SQL</b> {" using "} <b>blue-green</b> {" deployment strategy for minimal downtime, leveraging "} <b>EventBridge</b> {" for zero data loss and upgraded "} <b>DocumentDB</b> {" using "} <b>DMS</b> {" to support multi-region replicas, optimizing latency."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Revamped Bryte's primary website using "} <b>Webflow</b> {", focusing on "} <b>SEO optimization</b> {" and mobile-first responsiveness."}
+                        </span>
+                      </li>
+                    </ul>
+
+                    <ul class="space-y-2">
+                      <h5 class="text-lg sm:text-lg font-bold text-gray-900 mt-1">HeadStart</h5>
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Entirely revamped Admin panel UI using "} <b>ReactTS, MUI and Redux</b> {" resulting in "} <b>87% positive user feedback</b> {" from administrative staff."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Refactored and migrated backend services to "} <b>AWS Lambda</b> {", optimizing DB schema, resolving "} <b>concurrency issues</b> {", server management and reducing end user queries by "} <b>~90%</b> {" during peak usage hours."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Contributed to the development of "} <b>custom code execution engine</b> {" supporting multiple programming languages, enabling efficient candidate submission evaluation."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Implemented "} <b>image-based proctoring</b> {", ensuring candidate authentication and exam integrity."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Developed "} <b>role-based access control (RBAC)</b> {", storing permissions in DB to enforce action restrictions and dynamically control UI visibility."}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Built test case infrastructure for Admin backend using "} <b>Chai, Mocha & NYC</b> {" achieving "} <b>98% test coverage</b> {". "}
+                        </span>
+                      </li>
+
+                      <li class="flex items-start">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
+                        <span class="text-sm sm:text-base text-gray-600">
+                          {"Streamlined AWS resource management by automating with "} <b>SAM templates and CloudFormation stacks</b> {". "}
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
