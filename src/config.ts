@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Mohit Prajapati",
-  title: "Software Engineer",
+  title: "Software Engineer 2 at Infocusp Innovations LLP",
   description: "Portfolio website of Ryan Fitzgerald",
   accentColor: "#1d4ed8",
   social: {
@@ -11,15 +11,15 @@ export const siteConfig = {
     contact: "+91 97121 03041",
     location: "Ahmedabad, India - 380058",
     resume:
-      "https://drive.google.com/file/d/1IWdxE4E8cV7BjWkvgArjTdlf0S8eAJhF/view?usp=sharing",
+      "https://drive.google.com/file/d/1dsXQnxwqJe2r9LblQyVYI6I6Z98cUeyi/view?usp=sharing",
   },
   aboutMe:
-    "Full-Stack Developer with 2.5+ years of professional experience building scalable web apps. Comfortable working across frontend and backend, with a solid grasp of DSA and problem-solving (Leetcode rating 1660+). Always ready to tackle new challenges and deliver impactful solutions.",
+    "Software Engineer with 3+ years of experience building scalable backend systems and real-time applications, with strong problem-solving skills (LeetCode rating 1660+). Experienced in event-driven architectures, distributed systems, and AWS-based cloud infrastructure. Looking for opportunities to work on high-scale systems and contribute to building reliable, impactful products.",
   skills: [
-    ["JavaScript", "TypeScript", "Python", "Java", "C++"],
-    ["ReactTS", "Redux", "Angular", "Webflow"],
+    ["JavaScript", "TypeScript", "Java", "C++"],
+    ["ReactTS", "Redux", "MUI", "Tailwind CSS"],
     ["NodeJS", "ExpressJS", "Spring", "Spring Boot"],
-    ["MongoDB", "MySQL"],
+    ["MongoDB", "MySQL", "PostgreSQL"],
     ["AWS", "Docker", "Git", "CI/CD pipelines"],
   ],
   //   - *Languages*: JavaScript, TypeScript, Python, Java, C++
@@ -30,7 +30,7 @@ export const siteConfig = {
   experience: [
     {
       company: "Infocusp Innovations LLP",
-      title: "Software Engineer",
+      title: "Software Engineer 2",
       dateRange: "July 2022 - Present (1Y Internship + Full-time)",
       location: "Ahmedabad, India",
     },
@@ -57,7 +57,7 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "GeoConnect",
+      name: "IoT Fleet Tracking Platform | Senior Backend Engineer",
       description:
         "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
       // link: "https://aidevroundup.com/?ref=devportfolio",
@@ -71,16 +71,13 @@ export const siteConfig = {
       skills: [
         "Java",
         "Spring Boot",
-        "Spring Cloud (Config, Gateway)",
-        "Spring OAuth2.0",
         "Spring Data JPA",
-        "Hibernate",
-        "MySQL",
+        "Kafka",
+        "InfluxDB",
+        "Redis",
+        "PostgreSQL",
         "Docker",
-        "Kubernetes",
-        "AWS",
-        "JUnit",
-        "Mockito",
+        "AWS (ALB\, ECS\, EC2\, Fargate\, MSK\, RDS\, IoTCore)"
       ],
     },
     // {

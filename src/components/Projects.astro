@@ -60,12 +60,6 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
                       <div class="space-y-4">
                         <div>
-                          <span
-                            class="text-sm font-mono"
-                            style={{ color: siteConfig.accentColor }}
-                          >
-                            0{index + 1}
-                          </span>
                           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
                             {project.name}
                           </h3>
@@ -93,27 +87,30 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
                         <ul class="space-y-2">
                           <li class="flex items-start">
-                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
                             <span class="text-sm sm:text-base text-gray-600">
-                              {"Developed Group & Geofence Services for group management, time-bound invite codes, and "}<b>real-time location alerts</b>.
+                              {"Designed an event-driven backend for a fleet tracking system, handling "} <b>~1K devices in pilot</b> {", with architecture structured for horizontal scaling"}
                             </span>
                           </li>
+
                           <li class="flex items-start">
-                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
                             <span class="text-sm sm:text-base text-gray-600">
-                              {"Built "} <b>Config Service</b> {" for centralized configuration across multiple environments."}
+                              {"Set up a "} <b>Kafka based ingestion pipeline</b> {" to process continuous IoT location events, enabling reliable handling of burst traffic and decoupled service communication"}
                             </span>
                           </li>
+
                           <li class="flex items-start">
-                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
                             <span class="text-sm sm:text-base text-gray-600">
-                              {"Integrated "} <b>Apache Kafka</b> {" for scalable, event-driven microservice communication."}
+                              {"Built the "} <b>Location Service</b> {", handling continuous IoT event ingestion, storing high-frequency telemetry in "} <b>InfluxDB</b> {" for "} <b>write-heavy workloads</b> {" and optimizing hot reads using "} <b>Redis caching</b>
                             </span>
                           </li>
+
                           <li class="flex items-start">
-                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0"></span>
                             <span class="text-sm sm:text-base text-gray-600">
-                              {"Built a multi-channel Notification Service supporting "}<b>Email (SMTP), SMS (Twilio), and Push notifications</b>.
+                              {"Developed the "} <b>Alert Service</b> {" to evaluate Geofence and custom rules in near real-time, triggering notifications for fleet owners"}
                             </span>
                           </li>
                         </ul>
