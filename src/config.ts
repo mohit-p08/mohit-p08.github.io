@@ -11,16 +11,17 @@ export const siteConfig = {
     contact: "+91 97121 03041",
     location: "Ahmedabad, India - 380058",
     resume:
-      "https://drive.google.com/file/d/1dsXQnxwqJe2r9LblQyVYI6I6Z98cUeyi/view?usp=sharing",
+      "https://drive.google.com/file/d/1igrFdi1KJM2eTpzcXcKe9sTLiIWF4NZB/view?usp=sharing",
   },
   aboutMe:
     "Software Engineer with 3+ years of experience building scalable backend systems and real-time applications, with strong problem-solving skills (LeetCode rating 1660+). Experienced in event-driven architectures, distributed systems, and AWS-based cloud infrastructure. Looking for opportunities to work on high-scale systems and contribute to building reliable, impactful products.",
   skills: [
-    ["JavaScript", "TypeScript", "Java", "C++"],
+    ["JavaScript", "TypeScript", "Java", "Python", "C++"],
     ["ReactTS", "Redux", "MUI", "Tailwind CSS"],
     ["NodeJS", "ExpressJS", "Spring", "Spring Boot"],
     ["MongoDB", "MySQL", "PostgreSQL"],
     ["AWS", "Docker", "Git", "CI/CD pipelines"],
+    ["AI Agents", "Google ADK", "LangChain", "LangGraph", "Gemini API", "RAG", "MCP"]
   ],
   //   - *Languages*: JavaScript, TypeScript, Python, Java, C++
   // - *Frontend*: ReactTS, Redux, Angular, Webflow
@@ -31,7 +32,7 @@ export const siteConfig = {
     {
       company: "Infocusp Innovations LLP",
       title: "Software Engineer 2",
-      dateRange: "July 2022 - Present (1Y Internship + Full-time)",
+      dateRange: "July 2022 - Present",
       location: "Ahmedabad, India",
     },
     // {
